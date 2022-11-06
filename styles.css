@@ -1,0 +1,861 @@
+body {
+    font-family: proxima-nova,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #484848;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 36px;
+    padding-bottom:2px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+h3 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0px; 
+}
+
+p {
+    color: black;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: white;
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.navbarLogo {
+    font-family: proxima-nova,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-transform: uppercase;
+    background-color: #484848;
+    padding: 12px 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.navbarLogo a {
+    color: white;
+}
+
+.navbarLogo:hover {
+    color: #01d0ca;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbarLinks {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: #484848;
+    padding: 0px 10px;
+    list-style: none;
+    float: left;
+}
+
+.navbarLinks a {
+    color: #6d6d6a;
+    text-decoration: underline 3px rgba(1, 208, 202, 0);
+    transition: color 0.1s ease-in-out;
+}
+.navbarLinks a:hover {
+    color: black;
+    text-decoration: underline 3px rgba(1, 208, 202, 1);
+    transition: 0.1s ease-in-out;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburgerBar {
+    width: 25px;
+    height: 2.5px;
+    background-color: #484848;
+    margin: 6px auto;
+    transition: all 0.3s ease;
+}
+
+.heroRow {
+    display: flex;
+    height: 75vh;
+}
+
+.heroColumn {
+    flex: 50%;
+}
+
+.heroColumnLeft {
+    background-image: url("images/bokhylla.jpeg");
+    background-position: center;
+    background-position-x: 40%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.heroColumnRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.title {
+    position: absolute;
+    padding-bottom: 20px;
+    display: inline-block;
+    background-image: linear-gradient(#01d0ca 0 0);
+    background-position: -22px 62%;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    animation: underline 9s infinite ease-in-out;
+}
+
+.titleMobile {
+    display: none;
+    color: white;
+    font-size: 30px;
+    background-image: linear-gradient(#01d0ca 0 0);
+    background-position: -22px 36%;
+    background-repeat: no-repeat;
+    animation: underline 9s infinite ease-in-out;
+    padding-bottom: 60px;
+    align-self: flex-end;
+}
+
+.smallTitleSection {
+    display: flex;
+    min-height: 80px;
+    max-height: 100px;
+    height: 10vh;
+    background-image: url("images/textureDots.png");
+    background-size: 400px auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.smallTitleBox {
+    background-image: linear-gradient(#01d0ca 0 0);
+    padding: 20px 10px 20px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.smallTitleBox2 {
+    background-image: linear-gradient(#fec05b 0 0);
+}
+
+.smallTitleBox3 {
+    background-image: linear-gradient(#e194e2 0 0);
+}
+
+.smallTitleDiv {
+    background-image: linear-gradient(white 0 0);
+    padding: 8px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.smallTitleText {
+    color: black;
+    font-size: 14px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 480px;
+}
+
+.companyContainer {
+    margin: 20px;
+    max-width: 768px;
+    min-height: 420px;
+    display: flex;
+    justify-content: center;
+}
+
+.companySlides {
+    display: none;
+}
+
+.companyRow {
+    display: flex;
+    justify-content: center;
+}
+
+.companyColumnLeft {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    padding: 20px;
+}
+
+.companyColumnRight {
+    width: 80%;
+    padding: 20px;
+}
+
+.companyLogo {
+    max-width: 80px;
+    padding-top: 25px;
+}
+
+.companyLogoBafob {
+    max-width: 110px;
+    padding-top: 20px;
+}
+
+.companyLogoJB {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #484848;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.tinyText {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.companyBullets {
+    margin: 0px;
+    padding: 0 15px;
+    color: black;
+}
+
+.slideshowButtons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 30px;
+    user-select: none;
+    color: #6d6d6a
+}
+
+.slideshowButtonsMobile {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 30px;
+    user-select: none;
+    color: #6d6d6a
+}
+
+.slideshowButtons:hover .prev {
+    background-color: #6d6d6a;
+    opacity: 0.8;
+    color: white;
+}
+
+.slideshowButtons:hover .next {
+    background-color: #6d6d6a;
+    opacity: 0.8;
+    color: white;
+}
+
+.next, .prev {
+    padding: 10px;
+    background-color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.next:hover, .prev:hover {
+    background-color: #6d6d6a;
+    opacity: 0.8;
+    color: white;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 5px 30px 5px;
+    border-radius: 0;
+    display: inline-block;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #bbb;
+}
+
+.dot.active, .dot:hover {
+    background-color: #6d6d6a;
+}
+
+.statistik {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.statistikContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    min-height: 200px;
+    width: 70%;
+    max-width: 768px;
+}
+
+.statistikBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.statistikCounter {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.statistikBoxOne {
+    animation-name: fade;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.statistikBoxTwo {
+    animation-name: fadeDelay2;
+    animation-duration: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+.statistikBoxThree {
+    animation-name: fadeDelay3;
+    animation-duration: 2.4s;
+    animation-fill-mode: forwards;
+}
+
+.statistikText {
+    text-align: center;
+    font-size: 18px;
+}
+
+.portfolioAccordion {
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out;
+    max-height: 0px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.portfolioButton {
+    font-family: proxima-nova,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: #6d6d6a;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: underline 3px rgba(1, 208, 202, 0);
+    transition: all 0.1s ease-in-out;
+    border-width: 0px 0px 1px 0px;
+    border-color: whitesmoke;
+    border-style: solid;
+}
+
+.portfolioButton:hover, .portfolioButton.active {
+    color: black;
+    /* background-color: #bbb; */
+    text-decoration: underline 3px rgba(1, 208, 202, 1);
+    transition: all 0.1s ease-in-out;
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.portfolioButton:after {
+    content: "+";
+    font-style: normal;
+    font-size: 14px;
+    float: right;
+}
+
+.portfolioButton.active:after {
+    content: "-";
+}
+
+.portfolioContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.portfolioBorderLeft {
+    border-left: 5px solid #fec05b;
+    background-color: white;
+}
+
+.portfolioCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px;
+    position: relative;
+}
+
+.portfolioBilder {
+    width: 100%;
+    max-width: 768px;
+    min-width: 384px;
+    height: auto;
+    max-height: 432px;
+    min-height: 216px;
+}
+
+.bilderSlides {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.portfolioBilder,
+.portfolioHidden {
+    display: none;
+}
+
+.portfolioVisible {
+    display: block;
+}
+
+.portfolioBilderButtons {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 768px;
+    min-width: 384px;
+    height: auto;
+    max-height: 432px;
+    min-height: 216px;
+}
+
+#portfolioBilderButtonsNext,
+#portfolioBilderButtonsPrev {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 30px;
+    user-select: none;
+    color: white;
+    height: 100%;
+}
+
+.next2, .prev2 {
+    padding: 10px 15px;
+    transition: 0.15s ease-in-out;
+}
+
+.next2:hover, .prev2:hover {
+    background-color: white;
+    opacity: 0.8;
+    color: #484848;
+}
+
+.portfolioRow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.portfolioColumnVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.portfolioColumn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolioColumnLink {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: auto;
+    overflow: hidden;
+    max-width: 640px;
+    max-height: 400px;
+}
+
+.videoContainer iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    max-height: 400px;
+    overflow: hidden
+}
+
+.h2Column {
+    padding: 15px 20px 0px 20px;
+    max-width: 70%;
+}
+
+.pColumn {
+    padding: 0px 0px 0px 20px;
+    max-width: 70%;
+}
+
+.gitHub {
+    max-width: 200px;
+}
+
+.om {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.omContainer {
+    margin: 20px;
+    width: 100%;
+    max-width: 480px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #484848;
+    color: white;
+    padding: 40px 0px 40px 0px;
+    background-image: url("images/textureDots.png");
+    background-size: 400px auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.footerContainer {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    border-color: white;
+    border-left-style: dashed;
+    padding: 20px;
+    margin: 20px;
+}
+
+.footerText {
+    color: white;
+}
+
+.footerA {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes fade {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes fadeDelay2 {
+    from { opacity: 0 }
+    50% { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes fadeDelay3 {
+    from { opacity: 0 }
+    66% { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes underline {
+    from {
+        background-size: 0% 4px;
+        background-image: linear-gradient(#01d0ca 0 0);
+    }
+    13.2% {
+        background-size: 100% 4px;
+        background-image: linear-gradient(#01d0ca 0 0);
+    }
+    19.80% {
+        background-size: 100% 4px;
+        background-image: linear-gradient(#01d0ca 0 0);
+    }
+    33.33% {
+        background-size: 0% 4px;
+        background-image: linear-gradient(#01d0ca 0 0);
+    }
+    33.4% {
+        background-size: 0% 4px;
+        background-image: linear-gradient(#e194e2 0 0);
+    }
+    46.6% {
+        background-size: 100% 4px;
+        background-image: linear-gradient(#e194e2 0 0);
+    }
+    53.2% {
+        background-size: 100% 4px;
+        background-image: linear-gradient(#e194e2 0 0);
+    }
+    66.6% {
+        background-size: 0% 4px;
+        background-image: linear-gradient(#e194e2 0 0);
+    }
+    66.7% {
+        background-size: 0% 4px;
+        background-image: linear-gradient(#fec05b 0 0);
+    }
+    79.9% {
+        background-size: 100% 4px;
+        background-image: linear-gradient(#fec05b 0 0);
+    }
+    86.5% {
+        background-size: 100% 4px;
+        background-image: linear-gradient(#fec05b 0 0);
+    }
+    to {
+        background-size: 0% 4px;
+        background-image: linear-gradient(#fec05b 0 0);
+    }
+}
+
+@keyframes color {
+    0%, 33% {background-image: linear-gradient(#fec05b 0 0);}
+    34%, 66% {background-image: linear-gradient(#e194e2 0 0);}
+    67%, 100% {background-image: linear-gradient(#01d0ca 0 0);}
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding-left: 0px;    
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .hamburgerBar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .hamburgerBar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .hamburgerBar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbarMenu {
+        position: fixed;
+        top: -100%;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        transition: 0.4s ease-in-out;
+        z-index: -1;
+        width: 100%;
+        margin-left: -20px;
+    }
+    
+    .navbarLinks {
+        margin: 20px 0;
+        float: none;
+    }
+
+    .navbarMenu.active {
+        top: 35px;
+    }
+
+    .heroColumnLeft {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroColumnRight {
+        display: none;
+    }
+
+    .titleMobile {
+        display: block;
+    }
+
+    .company {
+        min-width: 0;
+    }
+
+    .companyColumnLeft {
+        display: none;
+    }
+
+    .companyColumnRight {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .slideshowBottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .slideshowButtons {
+        display: none;
+    }
+
+    .slideshowButtonsMobile {
+        display: block;
+    }
+
+    .dot {
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .statistikContainer {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .statistikBox {
+        padding-bottom: 20px;
+    }
+
+    .portfolioRow {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .portfolioCarousel {
+        margin: 0px 0px -7px 0px;
+    }
+
+    .portfolioBilder {
+        min-width: 128px;
+        min-height: 72px;
+    }
+
+    .portfolioBilderButtons {
+        min-width: 128px;
+        min-height: 72px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #portfolioBilderButtonsNext,
+    #portfolioBilderButtonsPrev {
+        font-size: 24px;
+    }
+
+    .next2, .prev2 {
+        padding: 5px 10px;
+        transition: 0.15s ease-in-out;
+    }
+
+    .portfolioColumnVideo {
+        width: 100%;
+    }
+
+    .h2Column,
+    .pColumn,
+    .portfolioColumn {
+        width: 100%;
+        max-width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pColumn {
+        padding-right: 20px;
+    }
+}
