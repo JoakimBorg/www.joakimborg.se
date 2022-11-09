@@ -21,7 +21,7 @@
             <!-- Navbar Links -->
             <ul class="navbarMenu">
                 <li class="navbarLinks"><a href="#cv">CV</a></li>
-                <li class="navbarLinks"><a href="#saljstatistik">Säljstatistik</a></li>
+                <li class="navbarLinks"><a href="#saljstatistik">Säljresultat</a></li>
                 <li class="navbarLinks"><a href="#portfolio">Portfolio</a></li>
                 <li class="navbarLinks"><a href="#om">Om</a></li>
                 <li class="navbarLinks"><a href="#kontakt">Kontakt</a></li>
@@ -50,9 +50,11 @@
 
     <!-- Small Text Curriculum Vitae -->
     <section class="smallTitleSection"><a name="cv"></a>
-        <div class="smallTitleBox"></div>
-        <div class="smallTitleDiv">
-            <div class="smallTitleText">Curriculum Vitae</div>
+        <div class="smallTitleBackground">
+            <div class="smallTitleBox smallTitleBox1"></div>
+            <div class="smallTitleDiv">
+                <div class="smallTitleText">Curriculum Vitae</div>
+            </div>
         </div>
     </section>
 
@@ -61,8 +63,8 @@
         <div class="companyContainer">
             
             <!-- Slideshow Previous Button -->
-            <div class="slideshowButtons">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="slideshowButtons" onclick="plusSlides(-1)">
+                <a class="prev">&#10094;</a>
             </div>
 
             <!-- Experis -->
@@ -152,8 +154,8 @@
             </div>
             
             <!-- Slideshow Next Button-->
-            <div class="slideshowButtons">
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slideshowButtons" onclick="plusSlides(1)">
+                <a class="next">&#10095;</a>
             </div>
         </div>
 
@@ -182,9 +184,11 @@
 
     <!-- Small Text Säljstatistik -->
     <section class="smallTitleSection"><a name="saljstatistik"></a>
-        <div class="smallTitleBox smallTitleBox2"></div>
-        <div class="smallTitleDiv">
-            <div class="smallTitleText">Säljstatistik</div>
+        <div class="smallTitleBackground">
+            <div class="smallTitleBox smallTitleBox2"></div>
+            <div class="smallTitleDiv">
+                <div class="smallTitleText">Säljresultat</div>
+            </div>
         </div>
     </section>
 
@@ -208,9 +212,11 @@
 
     <!-- Small Text Portfolio -->
     <section class="smallTitleSection"><a name="portfolio"></a>
-        <div class="smallTitleBox smallTitleBox3"></div>
-        <div class="smallTitleDiv">
-            <div class="smallTitleText">Portfolio</div>
+        <div class="smallTitleBackground">
+            <div class="smallTitleBox smallTitleBox3"></div>
+            <div class="smallTitleDiv">
+                <div class="smallTitleText">Portfolio</div>
+            </div>
         </div>
     </section>
 
@@ -219,7 +225,7 @@
 
         <!-- Bilder -->
         <button id="removeBilder" type="button" class="portfolioButton">Bilder</button>
-        <div class="portfolioContainer portfolioAccordion">
+        <div class="portfolioContainer portfolioAccordion portfolioContainerBilder">
             <div class="portfolioBorderLeft"></div>
             <div class="portfolioCarousel">
 
@@ -311,7 +317,6 @@
                         För att bättre förstå mina konsulter och kunder så lärde jag mig skriva kod.
                         <br><br>
                         Ärligt talat vet jag inte om jag är en duktig eller dålig programmerare, det får ni avgöra.
-                        Däremot tycker jag att denna hemsida blev fin.
                     </p>
                 </div>
             </div>
@@ -320,9 +325,11 @@
 
     <!-- Small Text Om -->
     <section class="smallTitleSection"><a name="om"></a>
-        <div class="smallTitleBox smallTitleBox1"></div>
-        <div class="smallTitleDiv">
-            <div class="smallTitleText">Om</div>
+        <div class="smallTitleBackground">
+            <div class="smallTitleBox smallTitleBox"></div>
+            <div class="smallTitleDiv">
+                <div class="smallTitleText">Om</div>
+            </div>
         </div>
     </section>
 
@@ -331,8 +338,7 @@
         <div class="omContainer">
             <h2>Om</h2>
             <p>
-            Som person är jag glad, rak i min kommunikation och orädd för att gå mot strömmen.
-            Mitt nästa mål är att bli rik.
+            Som person är jag oftast glad, rak i min kommunikation och orädd för att gå mot strömmen.
             </p>
             <hr>
             <h2>Kuriosa</h2>
@@ -352,7 +358,7 @@
     <!-- Footer -->
     <footer><a name="kontakt"></a>
         <div class="footerContainer">
-            <h2>Kontakt</h2>
+            <h2 class="footerText">Kontakt</h2>
             <p class="footerText">
             Joakim Borg
             <br>
@@ -371,5 +377,3 @@
 
 </body>
 </html>
-
-<!-- file:///Users/joakimborg/Documents/Designprojekt/WebDesign/JoakimBorg.se/index.html -->

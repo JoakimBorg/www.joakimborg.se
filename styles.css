@@ -20,11 +20,14 @@ header {
 h1 {
     font-size: 36px;
     padding-bottom:2px;
+    color: #484848;
+    /* color: white; */
 }
 
 h2 {
     font-size: 30px;
     margin: 0px;
+    color: #484848;
 }
 
 h3 {
@@ -67,13 +70,18 @@ hr {
     font-style: normal;
     color: white;
     text-transform: uppercase;
-    background-color: #484848;
+    /* background-color: #484848; */
     padding: 12px 15px;
     transition: 0.2s ease-in-out;
+    background-color: black;
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .navbarLogo a {
-    color: white;
+    color: #484848;
 }
 
 .navbarLogo:hover {
@@ -86,21 +94,21 @@ hr {
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
-    color: #484848;
+    color: #6D6D6A;
     padding: 0px 10px;
     list-style: none;
     float: left;
 }
 
 .navbarLinks a {
-    color: #6d6d6a;
+    color: #6D6D6A;
     text-decoration: underline 3px rgba(1, 208, 202, 0);
     transition: color 0.1s ease-in-out;
 }
 .navbarLinks a:hover {
     color: black;
     text-decoration: underline 3px rgba(1, 208, 202, 1);
-    transition: 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .hamburger {
@@ -138,14 +146,18 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: rgba(1, 208, 202, 1);
+    /* background-color: black; */
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .title {
     position: absolute;
     padding-bottom: 20px;
     display: inline-block;
-    background-image: linear-gradient(#01d0ca 0 0);
     background-position: -22px 62%;
     background-size: 100% 4px;
     background-repeat: no-repeat;
@@ -169,6 +181,18 @@ hr {
     min-height: 80px;
     max-height: 100px;
     height: 10vh;
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.smallTitleBackground {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+    max-height: 100px;
     background-image: url("images/textureDots.png");
     background-size: 400px auto;
     background-position: center;
@@ -176,7 +200,7 @@ hr {
 }
 
 .smallTitleBox {
-    background-image: linear-gradient(#01d0ca 0 0);
+    background-image: linear-gradient(#fec05b 0 0);
     padding: 20px 10px 20px 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -184,11 +208,11 @@ hr {
 }
 
 .smallTitleBox2 {
-    background-image: linear-gradient(#fec05b 0 0);
+    background-image: linear-gradient(#e194e2 0 0);
 }
 
 .smallTitleBox3 {
-    background-image: linear-gradient(#e194e2 0 0);
+    background-image: linear-gradient(#01d0ca 0 0);
 }
 
 .smallTitleDiv {
@@ -257,7 +281,7 @@ hr {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #484848;
+    /* color: #484848; */
     margin-top: 15px;
     margin-right: 20px;
 }
@@ -267,6 +291,7 @@ hr {
     font-weight: 400;
     text-transform: uppercase;
     margin: 0px;
+    color: black;
 }
 
 .companyBullets {
@@ -342,10 +367,13 @@ hr {
 .statistik {
     display: flex;
     justify-content: center;
+    /* background-color: rgba(254, 239, 0, .4); */
+    background-color: #fec05b;
     background-image: url("images/textureNoise.png");
     background-size: 80px auto;
     background-position: center;
     background-repeat: repeat;
+    color: #484848;
 }
 
 .statistikContainer {
@@ -406,6 +434,14 @@ hr {
     background-color: white;
 }
 
+.portfolioContainerBilder {
+    background: black;
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
+}
+
 .portfolioButton {
     font-family: proxima-nova,sans-serif;
     font-size: 14px;
@@ -429,7 +465,8 @@ hr {
 .portfolioButton:hover, .portfolioButton.active {
     color: black;
     /* background-color: #bbb; */
-    text-decoration: underline 3px rgba(1, 208, 202, 1);
+    /* text-decoration: underline 3px rgba(1, 208, 202, 1); */
+    text-decoration: underline 3px rgba(225, 148, 226, 1);
     transition: all 0.1s ease-in-out;
     background-image: url("images/textureNoise.png");
     background-size: 80px auto;
@@ -455,7 +492,7 @@ hr {
 }
 
 .portfolioBorderLeft {
-    border-left: 5px solid #fec05b;
+    border-left: 5px solid #e194e2;
     background-color: white;
 }
 
@@ -596,11 +633,16 @@ hr {
 .om {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    background-color: rgba(225, 148, 226, 1);
+    /* background-color: #01d0ca; */
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
+    background-position: center;
+    background-repeat: repeat;
 }
 
 .omContainer {
-    margin: 20px;
+    margin: 30px;
     width: 100%;
     max-width: 480px;
 }
@@ -608,11 +650,11 @@ hr {
 footer {
     display: flex;
     justify-content: center;
-    background-color: #484848;
+    background-color: black;
     color: white;
     padding: 40px 0px 40px 0px;
-    background-image: url("images/textureDots.png");
-    background-size: 400px auto;
+    background-image: url("images/textureNoise.png");
+    background-size: 80px auto;
     background-position: center;
     background-repeat: repeat;
 }
@@ -762,7 +804,7 @@ footer {
     }
 
     .titleMobile {
-        display: block;
+        display: none;
     }
 
     .company {
